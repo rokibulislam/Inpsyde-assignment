@@ -1,0 +1,30 @@
+{
+    "name": "rokibulislam/inpsyde",
+    "authors": [
+        {
+            "name": "rokibulislam",
+            "email": "rrcucse.11@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6",
+        "wp-coding-standards/wpcs": "2.2.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+        "phpcompatibility/phpcompatibility-wp": "2.1.0"
+    },
+    "autoload": {
+        "psr-4": {"Inpsyde\\": "src/"},
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "scripts": {
+        "phpcs": [
+          "phpcs -s -p"
+        ],
+        "phpcbf": [
+          "phpcbf -p"
+        ]
+    }
+}
